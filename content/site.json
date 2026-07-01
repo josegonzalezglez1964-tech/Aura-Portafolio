@@ -20,7 +20,7 @@
     "stat4_num": "3",
     "p1_en": "I split my days between writing software and chasing light. As a developer I lead product engineering for early-stage teams, with a leaning toward mobile, motion, and design systems.",
     "p2_es": "Como fotógrafo me inclino hacia el documental de larga duración y la arquitectura silenciosa — momentos que piden ser leídos despacio. Ambos oficios comparten la misma disciplina: mirar de cerca, eliminar el ruido y dejar que la estructura hable.",
-    "name": "Mateo Vargas",
+    "name": "Jose Gonzalez Gonzalez",
     "p1_es": "Divido mis días entre escribir software y perseguir la luz. Como desarrollador lidero ingeniería de producto para equipos en etapa temprana, con preferencia por móvil, movimiento y sistemas de diseño.",
     "role_en": "Developer · Photographer · Builder",
     "stat4_label_en": "Exhibitions",
@@ -32,7 +32,7 @@
     "stat3_label_es": "Países fotografiados",
     "stat2_label_es": "Proyectos enviados",
     "stat1_label_es": "Años de oficio",
-    "portrait": "https://images.unsplash.com/photo-1492288991661-058aa541ff43?w=900&q=80"
+    "portrait": "/content/images/97156.png"
   },
   "contact": {
     "sub_es": "Encargos, colaboraciones o un café — todo es bienvenido.",
