@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "cat": "dev", "year": "2025", "featured": true,
+      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=900&q=80",
+      "title_es": "Aurora Móvil", "title_en": "Aurora Mobile",
+      "desc_es": "Compañero financiero multiplataforma", "desc_en": "Cross-platform finance companion",
+      "tags": ["React Native", "TypeScript", "Expo"]
+    },
+    {
+      "cat": "photo", "year": "2025", "featured": true,
+      "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900&q=80",
+      "title_es": "Concreto y Sombra", "title_en": "Concrete and Shadow",
+      "desc_es": "Una serie sobre arquitectura nocturna en tres ciudades", "desc_en": "A series on nocturnal architecture across three cities",
+      "tags": ["35mm", "Documental", "Nocturno"]
+    },
+    {
+      "cat": "dev", "year": "2024", "featured": false,
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80",
+      "title_es": "Sistema Vela", "title_en": "Vela System",
+      "desc_es": "Librería de componentes para equipos de producto", "desc_en": "Component library for product teams",
+      "tags": ["Design Systems", "React", "Figma"]
+    },
+    {
+      "cat": "photo", "year": "2024", "featured": false,
+      "image": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=900&q=80",
+      "title_es": "Manos que Construyen", "title_en": "Hands that Build",
+      "desc_es": "Retratos de artesanos en talleres familiares", "desc_en": "Portraits of artisans in family workshops",
+      "tags": ["Retrato", "Medio Formato"]
+    },
+    {
+      "cat": "dev", "year": "2023", "featured": false,
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&q=80",
+      "title_es": "Mareas", "title_en": "Tides",
+      "desc_es": "Panel de analítica en tiempo real para flotas marítimas", "desc_en": "Real-time analytics dashboard for maritime fleets",
+      "tags": ["Next.js", "D3.js", "Node"]
+    },
+    {
+      "cat": "photo", "year": "2023", "featured": false,
+      "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900&q=80",
+      "title_es": "Horas Doradas", "title_en": "Golden Hours",
+      "desc_es": "Paisajes capturados solo durante los primeros veinte minutos de luz", "desc_en": "Landscapes shot only in the first twenty minutes of light",
+      "tags": ["Paisaje", "Película"]
+    }
+  ]
+}
