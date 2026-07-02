@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AURA.— Portafolio</title>
+<title>AURA. — Portafolio</title>
 <meta name="description" content="Portafolio de Mateo Vargas — desarrollador y fotógrafo. Productos móviles y fotografía documental.">
 <meta property="og:title" content="AURA. — Portafolio">
 <meta property="og:description" content="Portafolio de Mateo Vargas — desarrollador y fotógrafo.">
@@ -38,7 +38,7 @@
     font-family:var(--sans);
     -webkit-font-smoothing:antialiased;
     min-height:100vh;
-    padding-bottom:78px;
+    padding-bottom:0;
     overflow-x:hidden;
     width:100%;
   }
@@ -54,9 +54,9 @@
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 
-  /* ---------- Header ---------- */
+  /* ---------- Header + menú, pegados juntos arriba ---------- */
+  .site-top{position:sticky;top:0;z-index:40;}
   header.site{
-    position:sticky;top:0;z-index:40;
     display:flex;align-items:center;justify-content:space-between;
     padding:22px 24px;
     background:linear-gradient(to bottom, rgba(12,11,9,0.96), rgba(12,11,9,0.8));
@@ -208,22 +208,24 @@
   .contact-meta a{color:var(--ink-dim);font-size:0.92rem;display:flex;align-items:center;gap:10px;}
   .contact-meta a:hover{color:var(--gold-bright);}
 
-  /* ---------- Bottom nav ---------- */
+  /* ---------- Top nav (antes era menu inferior en movil) ---------- */
   nav.tabbar{
-    position:fixed;bottom:0;left:0;right:0;z-index:40;
-    display:flex;justify-content:space-around;align-items:center;
+    display:flex;justify-content:center;align-items:center;gap:4px;
     background:rgba(12,11,9,0.97);backdrop-filter:blur(10px);
-    border-top:1px solid var(--line);
-    padding:10px 8px calc(10px + env(safe-area-inset-bottom));
+    border-bottom:1px solid var(--line);
+    padding:10px 8px;
+    overflow-x:auto;
   }
   .tab-btn{
-    display:flex;flex-direction:column;align-items:center;gap:5px;
-    background:none;border:none;color:var(--ink-faint);font-size:0.66rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:600;
-    padding:6px 10px;transition:color .2s ease;
+    display:flex;flex-direction:row;align-items:center;gap:7px;flex-shrink:0;
+    background:none;border:none;color:var(--ink-faint);font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:600;
+    padding:9px 16px;border-radius:999px;transition:color .2s ease, background .2s ease;
   }
-  .tab-btn svg{width:21px;height:21px;stroke:var(--ink-faint);transition:stroke .2s ease;}
-  .tab-btn.active{color:var(--gold-bright);}
+  .tab-btn svg{width:18px;height:18px;stroke:var(--ink-faint);transition:stroke .2s ease;}
+  .tab-btn.active{color:var(--gold-bright);background:var(--panel);}
   .tab-btn.active svg{stroke:var(--gold-bright);}
+  .tab-btn:hover{color:var(--gold-bright);}
+  .tab-btn:hover svg{stroke:var(--gold-bright);}
 
   @media(min-width:560px){
     .stat-grid{grid-template-columns:1fr 1fr 1fr 1fr;}
@@ -252,19 +254,9 @@
     .feature-card{margin-bottom:0;}
   }
 
-  /* Top nav instead of bottom tabbar on desktop */
+  /* En escritorio, el menú superior queda centrado con el mismo ancho que el contenido */
   @media(min-width:860px){
-    body{padding-bottom:0;}
-    nav.tabbar{
-      position:sticky;top:0;bottom:auto;justify-content:flex-start;gap:8px;
-      padding:14px 40px;border-top:none;border-bottom:1px solid var(--line);
-      max-width:1080px;margin:0 auto;background:transparent;backdrop-filter:none;
-    }
-    header.site{position:relative;}
-    .tab-btn{flex-direction:row;gap:8px;padding:10px 16px;border-radius:999px;}
-    .tab-btn:hover{color:var(--gold-bright);}
-    .tab-btn:hover svg{stroke:var(--gold-bright);}
-    .tab-btn.active{background:var(--panel);}
+    nav.tabbar{justify-content:center;gap:8px;padding:14px 40px;}
   }
 
   @media(min-width:1180px){
@@ -276,13 +268,34 @@
 
 <div class="grain"></div>
 
-<header class="site">
-  <div class="logo">AURA.</div>
-  <div class="lang-toggle">
-    <button id="btn-en" data-lang="en">EN</button>
-    <button id="btn-es" class="active" data-lang="es">ES</button>
-  </div>
-</header>
+<div class="site-top">
+  <header class="site">
+    <div class="logo">AURA.</div>
+    <div class="lang-toggle">
+      <button id="btn-en" data-lang="en">EN</button>
+      <button id="btn-es" class="active" data-lang="es">ES</button>
+    </div>
+  </header>
+
+  <nav class="tabbar">
+    <button class="tab-btn active" data-view="home" onclick="goTo('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg>
+      <span data-i18n="nav.home">Inicio</span>
+    </button>
+    <button class="tab-btn" data-view="work" onclick="goTo('work')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      <span data-i18n="nav.work">Obra</span>
+    </button>
+    <button class="tab-btn" data-view="about" onclick="goTo('about')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+      <span data-i18n="nav.about">Yo</span>
+    </button>
+    <button class="tab-btn" data-view="contact" onclick="goTo('contact')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      <span data-i18n="nav.contact">Contacto</span>
+    </button>
+  </nav>
+</div>
 
 <main>
 
@@ -292,9 +305,9 @@
       <div class="hero-bg" id="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&q=80')"></div>
       <div class="hero-scrim"></div>
       <div class="hero-content">
-        <div class="eyebrow"><span id="hero-eyebrow">Portafolio · 2026</span></div>
+        <div class="eyebrow"><span id="hero-eyebrow">Portafolio · 2025</span></div>
         <h1 id="hero-title">Código de día,<br><em>luz de noche.</em></h1>
-        <p class="lede" id="hero-lede">Comercial de la ONCE orgulloso de vivir en El Hierro. Cuando no estoy repartiendo suerte, me encuentras programando webs, creando apps o perdiéndome con mi cámara por los senderos de El Pinar.</p>
+        <p class="lede" id="hero-lede">Construyo productos móviles y fotografío el mundo entre medias.</p>
         <button class="btn-primary" onclick="goTo('work')">
           <span id="hero-cta">Ver obra seleccionada</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -392,25 +405,6 @@
   </section>
 
 </main>
-
-<nav class="tabbar">
-  <button class="tab-btn active" data-view="home" onclick="goTo('home')">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg>
-    <span data-i18n="nav.home">Inicio</span>
-  </button>
-  <button class="tab-btn" data-view="work" onclick="goTo('work')">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-    <span data-i18n="nav.work">Obra</span>
-  </button>
-  <button class="tab-btn" data-view="about" onclick="goTo('about')">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
-    <span data-i18n="nav.about">Yo</span>
-  </button>
-  <button class="tab-btn" data-view="contact" onclick="goTo('contact')">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-    <span data-i18n="nav.contact">Contacto</span>
-  </button>
-</nav>
 
 <script>
 /* ---------------- DATA (se sobreescribe con content/*.json si existen) ---------------- */
