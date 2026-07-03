@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "featured": true,
+      "featured": false,
       "title_en": "Aurora Mobile",
       "title_es": "Aurora Móvil",
       "cat": "dev",
