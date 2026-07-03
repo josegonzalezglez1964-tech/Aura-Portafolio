@@ -46,20 +46,6 @@
       "year": "2026"
     },
     {
-      "featured": false,
-      "title_en": "Hands that Build",
-      "title_es": "Manos que Construyen",
-      "cat": "photo",
-      "desc_en": "Portraits of artisans in family workshops",
-      "tags": [
-        "Retrato",
-        "Medio Formato"
-      ],
-      "image": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=900&q=80",
-      "desc_es": "Retratos de artesanos en talleres familiares",
-      "year": "2024"
-    },
-    {
       "featured": true,
       "title_en": "Tides",
       "title_es": "Mareas",
@@ -76,6 +62,20 @@
     },
     {
       "featured": false,
+      "title_en": "Hands that Build",
+      "title_es": "Manos que Construyen",
+      "cat": "photo",
+      "desc_en": "Portraits of artisans in family workshops",
+      "tags": [
+        "Retrato",
+        "Medio Formato"
+      ],
+      "image": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=900&q=80",
+      "desc_es": "Retratos de artesanos en talleres familiares",
+      "year": "2024"
+    },
+    {
+      "featured": true,
       "title_en": "Golden Hours",
       "title_es": "Horas Doradas",
       "cat": "photo",
@@ -84,7 +84,7 @@
         "Paisaje",
         "Película"
       ],
-      "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900&q=80",
+      "image": "/content/images/97637.png",
       "desc_es": "Paisajes capturados solo durante los primeros veinte minutos de luz",
       "year": "2023"
     }
