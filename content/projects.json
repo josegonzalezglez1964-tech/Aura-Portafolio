@@ -46,7 +46,7 @@
       "year": "2026"
     },
     {
-      "featured": true,
+      "featured": false,
       "title_en": "Hands that Build",
       "title_es": "Manos que Construyen",
       "cat": "photo",
