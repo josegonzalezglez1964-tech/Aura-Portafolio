@@ -31,19 +31,19 @@
       "year": "2025"
     },
     {
-      "featured": false,
-      "title_en": "Vela System",
-      "title_es": "Sistema Vela",
+      "featured": true,
+      "title_en": "CANARY ISLANDS NEXUS",
+      "title_es": "CANARIAS NEXUS",
       "cat": "dev",
-      "desc_en": "Component library for product teams",
+      "desc_en": "Tenerife's first digital will. Your legacy, protected for the future.",
       "tags": [
-        "Design Systems",
-        "React",
-        "Figma"
+        "Innovación",
+        "Tecnología",
+        "Identidad Digital"
       ],
       "image": "/content/images/proyecto-cenit.png",
-      "desc_es": "Librería de componentes para equipos de producto",
-      "year": "2024"
+      "desc_es": "El primer testamento digital de Tenerife. Tu legado, protegido para el futuro.",
+      "year": "2026"
     },
     {
       "featured": true,
