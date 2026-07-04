@@ -1,36 +1,6 @@
 {
   "projects": [
     {
-      "featured": false,
-      "title_en": "Aurora Mobile",
-      "title_es": "Aurora Móvil",
-      "cat": "dev",
-      "desc_en": "Cross-platform finance companion",
-      "tags": [
-        "React Native",
-        "TypeScript",
-        "Expo"
-      ],
-      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=900&q=80",
-      "desc_es": "Compañero financiero multiplataforma",
-      "year": "2025"
-    },
-    {
-      "featured": false,
-      "title_en": "Concrete and Shadow",
-      "title_es": "Concreto y Sombra",
-      "cat": "photo",
-      "desc_en": "A series on nocturnal architecture across three cities",
-      "tags": [
-        "35mm",
-        "Documental",
-        "Nocturno"
-      ],
-      "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900&q=80",
-      "desc_es": "Una serie sobre arquitectura nocturna en tres ciudades",
-      "year": "2025"
-    },
-    {
       "featured": true,
       "title_en": "Futuristic Web Interface: Canarias Nexus Secure Protocol",
       "title_es": "Interfaz Web Futurista: Canarias Nexus Protocolo Secure",
@@ -44,35 +14,6 @@
       "image": "/content/images/proyecto-cenit.png",
       "desc_es": "Diseño y desarrollo de una página de aterrizaje (landing page) minimalista y de alta gama con una estética cyberpunk y corporativa. La interfaz web utiliza como fondo una fotografía aérea del volcán Teide en Tenerife bajo una iluminación crepuscular de tonos oscuros y dorados. Presenta una tipografía serif elegante para el encabezado principal \"El cénit de la convergencia\" y botones de acción (CTA) estilizados, incluyendo uno destacado en color amarillo ocre (\"EXPLORAR TESIS\") y otro secundario en texto plano (\"INICIAR CUSTODIA\"). El concepto visual transmite seguridad, custodia de identidad y tecnología avanzada.",
       "year": "2026"
-    },
-    {
-      "featured": false,
-      "title_en": "Tides",
-      "title_es": "Mareas",
-      "cat": "dev",
-      "desc_en": "Real-time analytics dashboard for maritime fleets",
-      "tags": [
-        "Next.js",
-        "D3.js",
-        "Node"
-      ],
-      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&q=80",
-      "desc_es": "Panel de analítica en tiempo real para flotas marítimas",
-      "year": "2023"
-    },
-    {
-      "featured": false,
-      "title_en": "Hands that Build",
-      "title_es": "Manos que Construyen",
-      "cat": "photo",
-      "desc_en": "Portraits of artisans in family workshops",
-      "tags": [
-        "Retrato",
-        "Medio Formato"
-      ],
-      "image": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=900&q=80",
-      "desc_es": "Retratos de artesanos en talleres familiares",
-      "year": "2024"
     },
     {
       "featured": true,
