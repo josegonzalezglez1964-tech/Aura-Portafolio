@@ -32,17 +32,17 @@
     },
     {
       "featured": true,
-      "title_en": "CANARY ISLANDS NEXUS",
-      "title_es": "CANARIAS NEXUS",
+      "title_en": "Futuristic Web Interface: Canarias Nexus Secure Protocol",
+      "title_es": "Interfaz Web Futurista: Canarias Nexus Protocolo Secure",
       "cat": "dev",
-      "desc_en": "Tenerife's first digital will. Your legacy, protected for the future.",
+      "desc_en": "Design and development of a minimalist, high-end landing page featuring a cyberpunk and corporate aesthetic. The web interface utilizes a dark, dramatic aerial photograph of Mount Teide in Tenerife as its background, blanketed in deep twilight and golden tones. It showcases an elegant serif typography for the main headline \"El cénit de la convergencia\" and stylized call-to-action (CTA) buttons, including a prominent ochre yellow button (\"EXPLORAR TESIS\") and a secondary text-only button (\"INICIAR CUSTODIA\"). The visual concept successfully conveys security, identity custody, and cutting-edge technology.",
       "tags": [
-        "Innovación",
-        "Tecnología",
-        "Identidad Digital"
+        "Desarrollo Web",
+        "Landing Page",
+        "Diseño Minimalista"
       ],
       "image": "/content/images/proyecto-cenit.png",
-      "desc_es": "El primer testamento digital de Tenerife. Tu legado, protegido para el futuro.",
+      "desc_es": "Diseño y desarrollo de una página de aterrizaje (landing page) minimalista y de alta gama con una estética cyberpunk y corporativa. La interfaz web utiliza como fondo una fotografía aérea del volcán Teide en Tenerife bajo una iluminación crepuscular de tonos oscuros y dorados. Presenta una tipografía serif elegante para el encabezado principal \"El cénit de la convergencia\" y botones de acción (CTA) estilizados, incluyendo uno destacado en color amarillo ocre (\"EXPLORAR TESIS\") y otro secundario en texto plano (\"INICIAR CUSTODIA\"). El concepto visual transmite seguridad, custodia de identidad y tecnología avanzada.",
       "year": "2026"
     },
     {
