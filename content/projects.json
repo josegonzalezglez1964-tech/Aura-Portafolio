@@ -46,7 +46,7 @@
       "year": "2026"
     },
     {
-      "featured": true,
+      "featured": false,
       "title_en": "Tides",
       "title_es": "Mareas",
       "cat": "dev",
