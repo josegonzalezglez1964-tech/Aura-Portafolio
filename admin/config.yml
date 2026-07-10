@@ -1,8 +1,5 @@
-El error es de **indentación en YAML**. En el archivo `config.yml`, las colecciones no están correctamente alineadas. Te falta el guión `-` antes de `name: "projects"` o hay un problema de sangría.
-
-Aquí está el **`config.yml` corregido** con la indentación correcta:
-
-```yaml
+El error es de **indentación en YAML**. En el archivo `config.yml`, las colecciones no están correctamente alineadas. Te falta cd ~/Desktop/aura-portafolio/admin
+cat > config.yml << 'EOF'
 backend:
   name: git-gateway
   branch: main
@@ -33,7 +30,6 @@ collections:
               - { label: "Texto del botón — Español", name: "cta_es", widget: "string" }
               - { label: "Texto del botón — English", name: "cta_en", widget: "string" }
               - { label: "Imagen de fondo", name: "image", widget: "image" }
-          
           - label: "Sobre mí"
             name: "about"
             widget: "object"
@@ -58,7 +54,6 @@ collections:
               - { label: "Estadística 4 — número", name: "stat4_num", widget: "string" }
               - { label: "Estadística 4 — etiqueta ES", name: "stat4_label_es", widget: "string" }
               - { label: "Estadística 4 — etiqueta EN", name: "stat4_label_en", widget: "string" }
-          
           - label: "Contacto"
             name: "contact"
             widget: "object"
@@ -69,7 +64,6 @@ collections:
               - { label: "Usuario de redes sociales", name: "social", widget: "string" }
               - { label: "Ubicación — Español", name: "location_es", widget: "string" }
               - { label: "Ubicación — English", name: "location_en", widget: "string" }
-
   - name: "projects"
     label: "Proyectos"
     files:
@@ -97,6 +91,8 @@ collections:
               - { label: "Descripción — English", name: "desc_en", widget: "text" }
               - { label: "Etiquetas", name: "tags", widget: "list" }
               - { label: "URL del proyecto (opcional)", name: "url", widget: "string", required: false, hint: "Deja vacío si no tiene enlace externo" }
+EOF
+to (opcional)", name: "url", widget: "string", required: false, hint: "Deja vacío si no tiene enlace externo" }
 ```
 
 **Los cambios principales:**
