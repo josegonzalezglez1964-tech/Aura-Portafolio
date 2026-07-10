@@ -22,9 +22,7 @@ collections:
               - { label: "Título línea 1 — Español", name: "line1_es", widget: "string" }
               - { label: "Título línea 1 — English", name: "line1_en", widget: "string" }
               - { label: "Título línea 2 (dorada) — Español", name: "line2_es", widget: "string" }
-              - { label: "Título línea 2 (dorada) — English", name: "line2_en", widget: "string" }
-              - { label: "Subtítulo — Español", name: "lede_es", widget: "text" }
-              - { label: "Subtítulo — English", name: "lede_en", widget: "text" }
+              - { label: "Título línea 2 (dorada) — English", name: "line2_en", widget: "s              - { label: { label: "Subtí          spañol",     : "lede_es"              - { label: "T�                   - { label: "T�nglish"  name: "lede_en", widget: "text" }
               - { label: "Texto del botón — Español", name: "cta_es", widget: "string" }
               - { label: "Texto del botón — English", name: "cta_en", widget: "string" }
               - { label: "Imagen de fondo", name: "image", widget: "image" }
@@ -51,15 +49,13 @@ collections:
               - { label: "Estadística 3 — etiqueta EN", name: "stat3_label_en", widget: "string" }
               - { label: "Estadística 4 — número", name: "stat4_num", widget: "string" }
               - { label: "Estadística 4 — etiqueta ES", name: "stat4_label_es", widget: "string" }
-              - { label: "Estadística 4 — etiqueta EN", name: "stat4_label_en", widget: "string" }
-          - label: "Contacto"
+              - { label: "Estad              - { label: "Estad              - { label: "Estad              - { label: "Estad       
             name: "contact"
             widget: "object"
             fields:
               - { label: "Subtítulo — Español", name: "sub_es", widget: "text" }
               - { label: "Subtítulo — English", name: "sub_en", widget: "text" }
-              - { label: "Correo electrónico", name: "email", widget: "string" }
-              - { label: "Usuario de redes sociales", name: "social", widget: "string" }
+              - { label: "Correo electrónico", name              - { label: "Correo electrónico", name              - { label: "Correo ele: "social", widget: "string" }
               - { label: "Ubicación — Español", name: "location_es", widget: "string" }
               - { label: "Ubicación — English", name: "location_en", widget: "string" }
   - name: "projects"
@@ -86,6 +82,5 @@ collections:
               - { label: "Título — Español", name: "title_es", widget: "string" }
               - { label: "Título — English", name: "title_en", widget: "string" }
               - { label: "Descripción — Español", name: "desc_es", widget: "text" }
-              - { label: "Descripción — English", name: "desc_en", widget: "text" }
-              - { label: "Etiquetas", name: "tags", widget: "list" }
+                                           English", name: "desc_en", wi                             - { label: "Etiquetas", name: "tags", widget: "list" }
               - { label: "URL del proyecto (opcional)", name: "url", widget: "string", required: false }
