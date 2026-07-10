@@ -1,11 +1,11 @@
-El error es de **indentación en YAML**. En el archivo `config.yml`, las colecciones no están correctamente alineadas. Te falta cd ~/Desktop/aura-portafolio/admin
-cat > config.yml << 'EOF'
 backend:
   name: git-gateway
   branch: main
-  media_folder: "content/images"
-  public_folder: "/content/images"
-  locale: "es"
+
+media_folder: "content/images"
+public_folder: "/content/images"
+
+locale: "es"
 
 collections:
   - name: "site"
@@ -15,10 +15,7 @@ collections:
         name: "site"
         label: "Inicio · Sobre mí · Contacto"
         fields:
-          - label: "Inicio (Hero)"
-            name: "hero"
-            widget: "object"
-            fields:
+          - { label: "Inicio (Hero)", name: "hero", widget: "object", fields:
               - { label: "Etiqueta — Español", name: "eyebrow_es", widget: "string" }
               - { label: "Etiqueta — English", name: "eyebrow_en", widget: "string" }
               - { label: "Título línea 1 — Español", name: "line1_es", widget: "string" }
@@ -30,10 +27,8 @@ collections:
               - { label: "Texto del botón — Español", name: "cta_es", widget: "string" }
               - { label: "Texto del botón — English", name: "cta_en", widget: "string" }
               - { label: "Imagen de fondo", name: "image", widget: "image" }
-          - label: "Sobre mí"
-            name: "about"
-            widget: "object"
-            fields:
+            }
+          - { label: "Sobre mí", name: "about", widget: "object", fields:
               - { label: "Nombre", name: "name", widget: "string" }
               - { label: "Rol — Español", name: "role_es", widget: "string" }
               - { label: "Rol — English", name: "role_en", widget: "string" }
@@ -53,6 +48,39 @@ collections:
               - { label: "Estadística 3 — etiqueta EN", name: "stat3_label_en", widget: "string" }
               - { label: "Estadística 4 — número", name: "stat4_num", widget: "string" }
               - { label: "Estadística 4 — etiqueta ES", name: "stat4_label_es", widget: "string" }
+              - { label: "Estadística 4 — etiqueta EN", name: "stat4_label_en", widget: "string" }
+            }
+          - { label: "Contacto", name: "contact", widget: "object", fields:
+              - { label: "Subtítulo — Español", name: "sub_es", widget: "text" }
+              - { label: "Subtítulo — English", name: "sub_en", widget: "text" }
+              - { label: "Correo electrónico", name: "email", widget: "string" }
+              - { label: "Usuario de redes sociales", name: "social", widget: "string" }
+              - { label: "Ubicación — Español", name: "location_es", widget: "string" }
+              - { label: "Ubicación — English", name: "location_en", widget: "string" }
+            }
+
+  - name: "projects"
+    label: "Proyectos"
+    files:
+      - file: "content/projects.json"
+        name: "projects"
+        label: "Lista de proyectos"
+        fields:
+          - label: "Proyectos"
+            name: "projects"
+            widget: "list"
+            summary: "{{title_es}} ({{year}})"
+            fields:
+              - { label: "Categoría", name: "cat", widget: "select", options: [{label: "Desarrollo", value: "dev"}, {label: "Fotografía", value: "photo"}] }
+              - { label: "Año", name: "year", widget: "string" }
+              - { label: "Mostrar en Inicio (destacado)", name: "featured", widget: "boolean", default: false }
+              - { label: "Imagen", name: "image", widget: "image" }
+              - { label: "Título — Español", name: "title_es", widget: "string" }
+              - { label: "Título — English", name: "title_en", widget: "string" }
+              - { label: "Descripción — Español", name: "desc_es", widget: "text" }
+              - { label: "Descripción — English", name: "desc_en", widget: "text" }
+              - { label: "Etiquetas", name: "tags", widget: "list" }
+
               - { label: "Estadística 4 — etiqueta EN", name: "stat4_label_en", widget: "string" }
           - label: "Contacto"
             name: "contact"
