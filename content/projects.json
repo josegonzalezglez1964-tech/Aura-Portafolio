@@ -5,6 +5,7 @@
       "title_en": "Futuristic Web Interface: Canarias Nexus Secure Protocol",
       "title_es": "Interfaz Web Futurista: Canarias Nexus Protocolo Secure",
       "cat": "dev",
+      "url": "https://tudominio.com/proyecto/canarias-nexus",  // ← AÑADE ESTO
       "desc_en": "Design and development of a minimalist, high-end landing page featuring a cyberpunk and corporate aesthetic. The web interface utilizes a dark, dramatic aerial photograph of Mount Teide in Tenerife as its background, blanketed in deep twilight and golden tones. It showcases an elegant serif typography for the main headline \"El cénit de la convergencia\" and stylized call-to-action (CTA) buttons, including a prominent ochre yellow button (\"EXPLORAR TESIS\") and a secondary text-only button (\"INICIAR CUSTODIA\"). The visual concept successfully conveys security, identity custody, and cutting-edge technology.",
       "tags": [
         "Desarrollo Web",
