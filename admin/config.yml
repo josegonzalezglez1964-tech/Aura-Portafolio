@@ -1,11 +1,14 @@
+El error es de **indentación en YAML**. En el archivo `config.yml`, las colecciones no están correctamente alineadas. Te falta el guión `-` antes de `name: "projects"` o hay un problema de sangría.
+
+Aquí está el **`config.yml` corregido** con la indentación correcta:
+
+```yaml
 backend:
   name: git-gateway
   branch: main
-
-media_folder: "content/images"
-public_folder: "/content/images"
-
-locale: "es"
+  media_folder: "content/images"
+  public_folder: "/content/images"
+  locale: "es"
 
 collections:
   - name: "site"
@@ -30,7 +33,7 @@ collections:
               - { label: "Texto del botón — Español", name: "cta_es", widget: "string" }
               - { label: "Texto del botón — English", name: "cta_en", widget: "string" }
               - { label: "Imagen de fondo", name: "image", widget: "image" }
-
+          
           - label: "Sobre mí"
             name: "about"
             widget: "object"
@@ -55,7 +58,7 @@ collections:
               - { label: "Estadística 4 — número", name: "stat4_num", widget: "string" }
               - { label: "Estadística 4 — etiqueta ES", name: "stat4_label_es", widget: "string" }
               - { label: "Estadística 4 — etiqueta EN", name: "stat4_label_en", widget: "string" }
-
+          
           - label: "Contacto"
             name: "contact"
             widget: "object"
@@ -87,10 +90,18 @@ collections:
                   - { label: "Fotografía", value: "photo" }
               - { label: "Año", name: "year", widget: "string" }
               - { label: "Mostrar en Inicio (destacado)", name: "featured", widget: "boolean", default: false }
-              - { label: "URL del proyecto (opcional)", name: "url", widget: "string", required: false, hint: "Deja vacío si no tiene enlace externo" }
               - { label: "Imagen", name: "image", widget: "image" }
               - { label: "Título — Español", name: "title_es", widget: "string" }
               - { label: "Título — English", name: "title_en", widget: "string" }
               - { label: "Descripción — Español", name: "desc_es", widget: "text" }
               - { label: "Descripción — English", name: "desc_en", widget: "text" }
               - { label: "Etiquetas", name: "tags", widget: "list" }
+              - { label: "URL del proyecto (opcional)", name: "url", widget: "string", required: false, hint: "Deja vacío si no tiene enlace externo" }
+```
+
+**Los cambios principales:**
+1. Añadí el guión `-` antes de `name: "projects"` (línea 77 aprox)
+2. Corregí la indentación para que ambas colecciones (`site` y `projects`) estén al mismo nivel
+3. Añadí el campo `url` para que puedas poner enlaces en los proyectos
+
+Copia este archivo completo, reemplaza tu `config.yml` actual, haz commit y push, y debería funcionar el admin.
