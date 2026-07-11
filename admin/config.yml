@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: josegonzalezglez1964-tech/Aura-Portafolio
   branch: main
 
 media_folder: "content/images"
