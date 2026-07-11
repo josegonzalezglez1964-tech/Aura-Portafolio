@@ -7,3 +7,9 @@
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
+
+# Redirigir /admin/* a /admin/index.html para que Decap CMS funcione en SPA mode
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
