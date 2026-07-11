@@ -1,6 +1,9 @@
 backend:
   name: git-gateway
   branch: main
+  repo: josegonzalezglez1964-tech/Aura-Portafolio
+  site_domain: aura-portafolio.netlify.app
+  auth_endpoint: /auth
   media_folder: "content/images"
   public_folder: "/content/images"
   locale: "es"
