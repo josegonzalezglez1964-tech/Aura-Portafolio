@@ -31,6 +31,20 @@
       "image": "/content/images/97637.png",
       "desc_es": "Una impresionante macrofotografía de fantasía que captura un dinámico primer plano de varias mariquitas gigantes explorando el suelo de un bosque iluminado por el sol. En el centro destacan varias setas rojas con motas blancas, que imitan la icónica estética de la Amanita muscaria. La escena destaca por sus colores vibrantes, detalles ultradefinidos en los caparazones brillantes de los insectos y una luz dorada y mágica que se filtra a través de la vegetación del fondo.",
       "year": "2026"
+    },
+    {
+      "featured": true,
+      "url": "https://josegonzalezglez1964-tech.github.io/Conecta-El-Pinar/",
+      "title_en": "Pinar Connect",
+      "title_es": "Pinar Conecta",
+      "cat": "dev",
+      "desc_en": "Designed for everyday life in El Pinar - from daily favors and garden surplus, to positive messages, local stories and quick alerts about roads, weather or trails.",
+      "tags": [
+        "Desarrollo"
+      ],
+      "image": "/content/images/101259.jpg",
+      "desc_es": "Diseñada para la vida diaria en El Pinar: desde favores cotidianos y excedentes de huerta, hasta mensajes positivos, historias locales y alertas rápidas sobre carreteras, clima o senderos.",
+      "year": "2026"
     }
   ]
 }
