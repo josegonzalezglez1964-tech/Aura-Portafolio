@@ -1,0 +1,5 @@
+# Redirigir /admin/* a /admin/index.html para Decap CMS
+/admin/*    /admin/index.html   200
+
+# Redirigir raíz a index.html (si es necesario)
+/          /index.html         200
