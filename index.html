@@ -198,6 +198,22 @@
 .feature-card {
   cursor: pointer;
 }
+
+/* Indicador de "enlace externo" — solo aparece en proyectos con URL real */
+.link-badge{
+  position:absolute; z-index:3;
+  width:34px; height:34px; border-radius:999px;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(12,11,9,0.75); backdrop-filter:blur(6px);
+  border:1px solid var(--line);
+  opacity:0; transform:translateY(6px);
+  transition:opacity .25s ease, transform .25s ease, border-color .25s ease;
+  pointer-events:none;
+}
+.link-badge svg{width:15px;height:15px;stroke:var(--gold-bright);}
+.feature-card .link-badge{top:14px;right:14px;}
+.project-media .link-badge{bottom:14px;right:14px;}
+.has-link:hover .link-badge{opacity:1;transform:translateY(0);border-color:var(--gold);}
   .project-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px;gap:10px;}
   .project-head .eyebrow{margin-bottom:0;}
   .project-year{font-size:0.85rem;color:var(--ink-faint);font-weight:500;flex-shrink:0;}
@@ -554,30 +570,10 @@ function renderFeatured(){
     const onclick = hasUrl ? '' : 'onclick="goTo(\'work\'); return false;"';
     
     return `
-      <a class="feature-card" href="${url}" ${onclick} ${hasUrl ? 'target="_blank" rel="noopener"' : ''}>
+      <a class="feature-card ${hasUrl ? 'has-link' : ''}" href="${url}" ${onclick} ${hasUrl ? 'target="_blank" rel="noopener"' : ''}>
         <img src="${p.image}" alt="${currentLang==='es'?p.title_es:p.title_en}">
         <div class="tag">${t('cat.' + p.cat)}</div>
-        <div class="cap">
-          <h3>${currentLang==='es'?p.title_es:p.title_en}</h3>
-          <p>${currentLang==='es'?p.desc_es:p.desc_en}</p>
-        </div>
-      </a>
-    `;
-  }).join('');
-}
-function renderFeatured(){
-  const wrap = document.getElementById('featured-list');
-  if(!wrap) return;
-  const items = PROJECTS.filter(p => p.featured).slice(0, 4);
-  wrap.innerHTML = items.map(p => {
-    const hasUrl = p.url && p.url.trim() !== '';
-    const url = hasUrl ? p.url : 'javascript:void(0)';
-    const onclick = hasUrl ? '' : 'onclick="goTo(\'work\'); return false;"';
-    
-    return `
-      <a class="feature-card" href="${url}" ${onclick} ${hasUrl ? 'target="_blank" rel="noopener"' : ''}>
-        <img src="${p.image}" alt="${currentLang==='es'?p.title_es:p.title_en}">
-        <div class="tag">${t('cat.' + p.cat)}</div>
+        ${hasUrl ? `<span class="link-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></span>` : ''}
         <div class="cap">
           <h3>${currentLang==='es'?p.title_es:p.title_en}</h3>
           <p>${currentLang==='es'?p.desc_es:p.desc_en}</p>
@@ -597,8 +593,9 @@ function renderProjects(){
     
     return `
       <div class="project-card">
-        <a class="project-media" href="${url}" ${onclick} ${hasUrl ? 'target="_blank" rel="noopener"' : ''} style="display:block;">
+        <a class="project-media ${hasUrl ? 'has-link' : ''}" href="${url}" ${onclick} ${hasUrl ? 'target="_blank" rel="noopener"' : ''} style="display:block;">
           <img src="${p.image}" alt="${currentLang==='es'?p.title_es:p.title_en}">
+          ${hasUrl ? `<span class="link-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></span>` : ''}
         </a>
         <div class="project-head">
           <div class="eyebrow">${t('cat.' + p.cat)}</div>
