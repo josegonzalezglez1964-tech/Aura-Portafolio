@@ -1,0 +1,35 @@
+{
+  "projects": [
+    {
+      "featured": true,
+      "title_en": "Futuristic Web Interface: Canarias Nexus Secure Protocol",
+      "title_es": "Interfaz Web Futurista: Canarias Nexus Protocolo Secure",
+      "cat": "dev",
+      "url": "https://aura-portafolio.netlify.app/",
+      "desc_en": "Design and development of a minimalist, high-end landing page featuring a cyberpunk and corporate aesthetic. The web interface utilizes a dark, dramatic aerial photograph of Mount Teide in Tenerife as its background, blanketed in deep twilight and golden tones. It showcases an elegant serif typography for the main headline \"El cénit de la convergencia\" and stylized call-to-action (CTA) buttons, including a prominent ochre yellow button (\"EXPLORAR TESIS\") and a secondary text-only button (\"INICIAR CUSTODIA\"). The visual concept successfully conveys security, identity custody, and cutting-edge technology.",
+      "tags": [
+        "Desarrollo Web",
+        "Landing Page",
+        "Diseño Minimalista"
+      ],
+      "image": "/content/images/proyecto-cenit.png",
+      "desc_es": "Diseño y desarrollo de una página de aterrizaje (landing page) minimalista y de alta gama con una estética cyberpunk y corporativa. La interfaz web utiliza como fondo una fotografía aérea del volcán Teide en Tenerife bajo una iluminación crepuscular de tonos oscuros y dorados. Presenta una tipografía serif elegante para el encabezado principal \"El cénit de la convergencia\" y botones de acción (CTA) estilizados, incluyendo uno destacado en color amarillo ocre (\"EXPLORAR TESIS\") y otro secundario en texto plano (\"INICIAR CUSTODIA\"). El concepto visual transmite seguridad, custodia de identidad y tecnología avanzada.",
+      "year": "2026"
+    },
+    {
+      "featured": true,
+      "title_en": "The Forest's Secret: Ladybugs and Amanitas",
+      "title_es": "El Secreto del Bosque: Mariquitas y Amanitas",
+      "cat": "photo",
+      "desc_en": "A stunning fantasy macro photograph capturing a dynamic close-up of several giant ladybugs exploring a sun-drenched forest floor. In the center, vibrant red mushrooms with white spots take center stage, mimicking the iconic Amanita muscaria aesthetic. The scene stands out for its rich, saturated colors, ultra-sharp details on the insects' glossy shells, and a magical golden light filtering through the background foliage.",
+      "tags": [
+        "Macro",
+        "Naturaleza",
+        "Mariquitas"
+      ],
+      "image": "/content/images/97637.png",
+      "desc_es": "Una impresionante macrofotografía de fantasía que captura un dinámico primer plano de varias mariquitas gigantes explorando el suelo de un bosque iluminado por el sol. En el centro destacan varias setas rojas con motas blancas, que imitan la icónica estética de la Amanita muscaria. La escena destaca por sus colores vibrantes, detalles ultradefinidos en los caparazones brillantes de los insectos y una luz dorada y mágica que se filtra a través de la vegetación del fondo.",
+      "year": "2026"
+    }
+  ]
+}
