@@ -45,6 +45,21 @@
       "image": "/content/images/101259.jpg",
       "desc_es": "Diseñada para la vida diaria en El Pinar: desde favores cotidianos y excedentes de huerta, hasta mensajes positivos, historias locales y alertas rápidas sobre carreteras, clima o senderos.",
       "year": "2026"
+    },
+    {
+      "featured": true,
+      "title_en": "Symphony of Textures: The Composition of a Cactus and Succulent Garden",
+      "title_es": "Sinfonía de Texturas: La Composición de un Jardín de Cactus y Suculentas",
+      "cat": "photo",
+      "desc_en": "Immerse yourself in a world of textures and contrasts, where nature unfolds into a symphony of shapes and colors. Today, we invite you to explore the fascinating composition of a garden of cactus and succulents - a living tapestry that captivates the eye and awakens the senses.",
+      "tags": [
+        "TexturasNaturales",
+        "FotografiaDeNaturaleza",
+        ""
+      ],
+      "image": "/content/images/101860.png",
+      "desc_es": "Sumérgete en un mundo de texturas y contrastes, donde la naturaleza se despliega en una sinfonía de formas y colores. Hoy, te invitamos a explorar la fascinante composición de un jardín de cactus y suculentas, un tapiz vivo que cautiva la vista y despierta los sentidos.",
+      "year": "2026"
     }
   ]
 }
